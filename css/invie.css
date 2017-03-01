@@ -1,41 +1,29 @@
-/*selector universal*/
-* {
-  border: 1px solid red;
-  margin: 10px;
+
+.titulo {
+  font-size: 70px;
 }
 
-/*selector de etiqueta*/
-header {
-  background: blue
+.title-a {
+  font-size: 24px;
 }
 
-section {
-  background: purple
+.guitarras {
+    color:#1f313c;
 }
 
-/*selector descendente*/
-article h3{
-  color: green;
+.guitarras h2 {
+font-size: 35px;
 }
 
-/*selectores de clase*/
-.title-a{
-  background: yellow;
+.title-b {
+  font-size: 50px;
 }
 
-.title-b{
-  background: salmon;
+.portada {
+  background: url("../img/background.png") #000;
+  color: #fff;
 }
 
-/*selector de id*/
-#inicio {
-  border:3px solid black;
-}
-
-#portada {
-  border:3px solid orange;
-}
-
-#guitarra {
-  border:3px solid brown;
+.menu {
+  font-size: 24px;
 }
