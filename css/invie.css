@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Allerta', sans-serif;
+  margin: 0;
 }
 
 h1, h2 {
@@ -10,14 +11,19 @@ h1, h2 {
 
 .titulo {
   font-size: 70px;
+  margin-bottom: 0px;
+  margin-top: 70px;
 }
 
 .title-a {
   font-size: 24px;
+  margin-top: 0;
 }
 
 .guitarras {
     color:#1f313c;
+    margin: 0 auto;
+    width: 800px;
 }
 
 .guitarras h2 {
@@ -26,11 +32,19 @@ font-size: 35px;
 
 .title-b {
   font-size: 50px;
+  margin-bottom: 20px;
 }
 
 .portada {
   background: url("../img/background.png") #000;
   color: #fff;
+  padding: 20px;
+  width: 800px;
+  margin: auto;
+}
+
+.portada button {
+  margin-bottom: 70px;
 }
 
 .menu {
@@ -40,8 +54,14 @@ font-size: 35px;
 
 .menu li {
   display: inline-block;
+  margin-left: 30px;
 }
 
 .logotipo {
   display: inline-block;
+}
+
+.inicio {
+margin: 0 auto;
+width: 800px;
 }
