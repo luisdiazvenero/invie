@@ -22,8 +22,7 @@ h1, h2 {
 
 .guitarras {
     color:#1f313c;
-    margin: 0 auto;
-    width: 800px;
+
 }
 
 .guitarras h2 {
@@ -39,8 +38,7 @@ font-size: 35px;
   background: url("../img/background.png") #000;
   color: #fff;
   padding: 20px;
-  width: 800px;
-  margin: auto;
+
 }
 
 .portada button {
@@ -62,6 +60,10 @@ font-size: 35px;
 }
 
 .inicio {
-margin: 0 auto;
-width: 800px;
+
+}
+
+.contenedor {
+  margin: 0 auto;
+  width: 800px;
 }
