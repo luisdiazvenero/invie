@@ -9,6 +9,14 @@ h1, h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
+button {
+  border: none;
+  border-radius: 5px;
+  background: #fd324e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
 .titulo {
   font-size: 70px;
   margin-bottom: 0px;
@@ -22,7 +30,6 @@ h1, h2 {
 
 .guitarras {
     color:#1f313c;
-
 }
 
 .guitarras h2 {
@@ -73,7 +80,7 @@ font-size: 35px;
   padding: 10px;
   margin: 10px;
   border: 1px solid #1f313c;
-
+border-radius: 8px;
 }
 .guitarra ol {
   padding: 0;
