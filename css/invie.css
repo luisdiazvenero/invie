@@ -105,3 +105,21 @@ border-radius: 8px;
 .contenedor-guitarra-a {
   padding-left: 20px;
 }
+
+.footer {
+  background: #273b47;
+  color: #fff;
+}
+
+.contacto img {
+  display: block;
+}
+
+.contacto strong{
+  display: block;
+}
+
+.contacto a{
+  color: #fff;
+  text-decoration: none;
+}
