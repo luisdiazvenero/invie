@@ -121,14 +121,33 @@
       </div>
     </footer>
     <script type="text/javascript">
-      var $burguerButton = document.getElementById("burguer-button");
-      var $menu = document.getElementById("menu");
+    var consulta = window.matchMedia("(max-width: 800px)");
+    consulta.addListener(mediaQuery);
 
-      $burguerButton.addEventListener("touchstart", toogleMenu);
+    var $burguerButton = document.getElementById("burguer-button");
+    var $menu = document.getElementById("menu");
+    function toogleMenu() {
+      $menu.classList.toggle("active");
+      $burguerButton.classList.toggle("icon-close");
+    }
 
-      function toogleMenu() {
-        $menu.classList.toggle("active")
+
+    function mediaQuery() {
+      if(consulta.matches){
+        console.log("se cumplio");
+        $burguerButton.addEventListener("touchstart", toogleMenu);
+
+      } else {
+        console.log ("no pasa nada");
+        $burguerButton.removeEventListener("touchstart", toogleMenu);
       }
+    }
+    mediaQuery();
+
+
+
+
+
     </script>
   </body>
 </html>
