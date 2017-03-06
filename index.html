@@ -5,7 +5,7 @@
     <title>Invie</title>
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/invie.css">
-    
+
   </head>
   <body>
 
@@ -16,8 +16,9 @@
         <figure class="logotipo"><!-- logotipo -->
           <img src="img/invie.png" width="186" height="60" alt="Invie logo">
         </figure>
+        <span class="burguer-button icon-menu" id="burguer-button"></span>
 
-        <nav class="menu"><!-- menu -->
+        <nav class="menu" id="menu"><!-- menu -->
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#guitarras">Guitarras</a></li>
@@ -118,6 +119,13 @@
 
       </div>
     </footer>
+    <script type="text/javascript">
+      var $burguerButton = document.getElementById("burguer-button");
+      var $menu = document.getElementById("menu");
 
+      $burguerButton.addEventListener("touchstart", function() {
+        $menu.classList.toggle("active")
+      })
+    </script>
   </body>
 </html>
