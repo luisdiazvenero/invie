@@ -128,7 +128,7 @@ input:focus, textarea:focus {
 }
 
 .contenedor {
-
+  margin: 0 auto;
   max-width: 800px;
   position: relative;
 }
