@@ -484,6 +484,7 @@ border-radius: 8px;
 
   .menu.active {
     left: 0;
+    transition: .3s;
   }
 
   .menu ul {
