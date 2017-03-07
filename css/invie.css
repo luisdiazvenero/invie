@@ -323,6 +323,12 @@ border-radius: 8px;
   height: 100%;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .background {
+    background: url("../img/background2x.png") #000;
+  }
+}
+
 @media screen and (max-width:800px) {
 
   /*Portada*/
