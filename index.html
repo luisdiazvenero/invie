@@ -41,7 +41,7 @@
       <h2>Nuestras Guitarras</h2><!-- titulo -->
 
       <article class="guitarra"><!-- guitarra1 -->
-        <img src="img/invie-acustica.png" alt="Invie Acustica" width="350" class="derecha">
+        <img data-src="img/invie-acustica.png" alt="Invie Acustica" width="350" class="derecha">
         <div class="contenedor-guitarra-a">
           <h3 class="title-b">Invie Acústica</h3>
           <ol>
@@ -54,7 +54,7 @@
       </article>
 
       <article class="guitarra b"><!-- guitarra2 -->
-        <img src="img/invie-classic.png" alt="Invie Classic" width="350" class="izquierda">
+        <img data-src="img/invie-classic.png" alt="Invie Classic" width="350" class="izquierda">
         <div class="contenedor-guitarra-b">
           <h3 class="title-b">Invie Classic</h3>
           <ol>
@@ -69,7 +69,7 @@
     <footer class="footer">
       <div class="contenedor">
         <div class="contacto">
-        <img src="img/invie-white.png" alt="Logo Invie">
+        <img data-src="img/invie-white.png" alt="Logo Invie">
         <a href="tel:302 456789"><strong>Teléfono</strong> <span>302 456789</span></a>
         <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
       </div>
@@ -120,6 +120,7 @@
 
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
     <script type="text/javascript">
     var consulta = window.matchMedia("(max-width: 800px)");
     consulta.addListener(mediaQuery);
@@ -144,7 +145,10 @@
     }
     mediaQuery();
 
-
+    //Lazy loading
+    var bLazy = new Blazy({
+      selector:'img'
+    });
 
 
 
