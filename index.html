@@ -3,10 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Invie</title>
-    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/invie.css">
+
+    <!-- Estilos anteriores
+        <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
+    -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
+    <style>
+  @font-face{font-family:'icomoon';src:url(./fonts/icomoon.eot?k3ap3g);src:url(./fonts/icomoon.eot?k3ap3g#iefix) format("embedded-opentype"),url(./fonts/icomoon.ttf?k3ap3g) format("truetype"),url(./fonts/icomoon.woff?k3ap3g) format("woff"),url(./fonts/icomoon.svg?k3ap3g#icomoon) format("svg");font-weight:400;font-style:normal}[class*=" icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\f0c9"}html{height:100%}body{font-family:'Allerta',sans-serif;margin:0;min-height:100%;display:flex;flex-direction:column}h1,h2{font-family:'Montserrat',sans-serif}.portada,.guitarras{flex:1}.button{border:none;border-radius:12px;background:#fd324e;color:#fff;padding:10px 20px;font-size:18px;background:linear-gradient(to left,#fe3443,#ff7250);text-decoration:none}.titulo{font-size:70px;margin-bottom:0;margin-top:70px}.titulo span{text-decoration:underline}.title-a{font-size:24px;margin-top:0}.background{background:url(./img/background.png) #000;background-size:cover}.portada{color:#fff;padding:20px;height:500px}.menu{font-size:24px;display:inline-block;float:right}.menu a{color:#fff;text-decoration:none}.menu li{display:inline-block;margin-left:30px}.menu li:before{content:"»";color:#fff}.logotipo{display:inline-block;margin-left:0}.contenedor{margin:0 auto;max-width:800px;position:relative}.guitarras{color:#1f313c;margin-bottom:60px}.guitarras h2{font-size:35px}.derecha{float:right;position:relative;top:-127px}.burguer-button{width:40px;height:40px;line-height:40px;border-radius:50%;background:#395565;display:none;text-align:center;position:fixed;left:20px;top:20px;z-index:3;color:#fff}.video-demo{max-width:500px;width:100%;border:5px solid #000}.video-responsive-contenedor{position:relative;padding-bottom:56.25%}.video-responsive-src{position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%}.video-demo-contenedor{display:flex;justify-content:center;margin-bottom:80px}@media screen and (-webkit-min-device-pixel-ratio: 2){.background{background:url(./img/background2x.png) #000}}@media screen and (max-width:800px){.titulo{margin-top:30px;font-size:45px}.title-a{font-size:18px}.portada{height:auto}.portada .button{margin-bottom:30px;display:inline-block}.guitarras{text-align:center}.derecha{float:none;position:static}.contenedor{margin:0}.video-demo-contenedor{margin-bottom:30px}}@media screen and (max-width:767px){.menu{display:block;text-align:center;float:none}.menu li:first-child{margin-left:0}.menu ul{padding:0}.logotipo{margin:0}.inicio,.contenedor{text-align:center}}@media screen and (max-width:510px){.portada .contenedor,.inicio{position:static}.menu{background:rgba(57,85,101,0.95);position:fixed;left:-100%;top:0;width:100%;z-index:2;bottom:0;display:flex;align-items:center}.menu ul{flex:1}.menu li{display:block;margin-left:0;padding:8px 0;border-bottom:1px solid #fff}.menu li:first-child{border-top:1px solid #fff}.menu li:before{display:none}.titulo{font-size:30px}.title-a{font-size:16px}.guitarra img{width:200px}.burguer-button{display:block}.video-demo-contenedor{margin:0 10px 30px}.portada .button{display:block}}
+    </style>
   </head>
   <body>
 
@@ -130,6 +136,19 @@
 
       </div>
     </footer>
+    <script>
+       WebFontConfig = {
+          google: { families: ['Montserrat', 'Allerta'] }
+       };
+
+       (function(d) {
+          var wf = d.createElement('script'), s = d.scripts[0];
+          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+          wf.async = true;
+          s.parentNode.insertBefore(wf, s);
+       })(document);
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js">
 
@@ -180,5 +199,6 @@
 
 
     </script>
+    <link rel="stylesheet" href="css/invie.css">
   </body>
 </html>
