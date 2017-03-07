@@ -299,14 +299,20 @@ border-radius: 8px;
   line-height: 40px;
   border-radius: 50%;
   background: #395565;
-  display: inline-block;
+  display: none;
   text-align: center;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   left: 20px;
   top: 20px;
   z-index: 3;
   color: #fff;
+}
+
+.video-demo {
+  max-width: 500px;
+  width: 100%;
+  border:5px solid black;
 }
 
 .video-responsive-contenedor {
@@ -322,6 +328,12 @@ border-radius: 8px;
   bottom: 0;
   width: 100%;
   height: 100%;
+}
+
+.video-demo-contenedor {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -397,6 +409,10 @@ border-radius: 8px;
     margin: 0;
   }
 
+  .video-demo-contenedor {
+    margin-bottom: 30px;
+  }
+
 }
 
 @media screen and (max-width:767px) {
@@ -458,6 +474,8 @@ border-radius: 8px;
   input[type="radio"],input[type="checkbox"]{
     zoom:1.5
   }
+
+
 }
 
 
@@ -467,11 +485,13 @@ border-radius: 8px;
     position: static;
   }
 
-
+  .precios .logotipo {
+    margin: 50px 0;
+  }
 
   .menu{
     background: rgba(57,85,101,0.95);
-    position: absolute;
+    position: fixed;;
     left:-100%;
     top: 0;
     width: 100%;
@@ -518,7 +538,20 @@ border-radius: 8px;
     width: 200px;
   }
 
+.burguer-button {
+  display: block;
+}
 
+.video-demo-contenedor {
+  margin: 0 10px 30px 10px;
+}
 
+.portada .button {
+  display: block;
+}
+
+.formulario .col2 {
+  align-items: stretch;
+}
 
 }
