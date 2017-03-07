@@ -306,6 +306,7 @@ border-radius: 8px;
   left: 20px;
   top: 20px;
   z-index: 3;
+  color: #fff;
 }
 
 .video-responsive-contenedor {
@@ -330,6 +331,16 @@ border-radius: 8px;
 }
 
 @media screen and (max-width:800px) {
+
+  /*precios*/
+  .tabla {
+    margin: 50px 20px;
+  }
+
+  .tabla .contenedor{
+    overflow: auto;
+    border: 1px solid;
+  }
 
   /*Portada*/
   .titulo {
@@ -452,9 +463,11 @@ border-radius: 8px;
 
 
 @media screen and (max-width:510px) {
-  .portada .contenedor {
+  .portada .contenedor, .inicio .contenedor, .inicio {
     position: static;
   }
+
+
 
   .menu{
     background: rgba(57,85,101,0.95);
@@ -503,6 +516,8 @@ border-radius: 8px;
   .guitarra img {
     width: 200px;
   }
+
+
 
 
 }
